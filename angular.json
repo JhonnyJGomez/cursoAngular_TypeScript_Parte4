@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "losServicios"
+    }
+  },
+  "defaultProject": "losServicios",
+  "cli": {
+    "analytics": false
+  }
 }

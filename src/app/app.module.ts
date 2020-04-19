@@ -7,20 +7,24 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { HomeComponent } from './home/home.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuarioService } from './services/usuario.service';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
+import { ArticulosService } from './services/articulos.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
     HomeComponent,
-    PerfilComponent
+    PerfilComponent,
+    ArticuloDetalleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    UsuarioService
+    UsuarioService,
+    ArticulosService
   ],
   bootstrap: [AppComponent]
 })

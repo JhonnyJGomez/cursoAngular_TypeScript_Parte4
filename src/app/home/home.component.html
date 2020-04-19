@@ -1,18 +1,8 @@
 <div class="container">
-    <div class="articulo">
-        <h4>Encabezado</h4>
-        <p>Descripcion</p>
-        <p>Fecha</p>
+    <div class="articulo" *ngFor ="let listaArticulos of articulo" >
+        <h4 (click)="irAlDetalle(listaArticulos)"> {{listaArticulos.nombre}}</h4>
+        <p>{{listaArticulos.descripcion}}</p>
+        <p>{{listaArticulos.fecha | date}}</p>
+        <p>{{listaArticulos.usuario}}</p>
     </div>
-    <div class="articulo">
-        <h4>Encabezado</h4>
-        <p>Descripcion</p>
-        <p>Fecha</p>
-    </div>
-    <div class="articulo">
-        <h4>Encabezado</h4>
-        <p>Descripcion</p>
-        <p>Fecha</p>
-    </div>
-
 </div>

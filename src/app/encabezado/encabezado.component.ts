@@ -11,7 +11,6 @@ export class EncabezadoComponent implements OnInit {
   constructor(public UsuarioInyectado: UsuarioService) { }
 
   ngOnInit(): void {
-    console.log(this.UsuarioInyectado.usuario.nombre)
   }
 
 }

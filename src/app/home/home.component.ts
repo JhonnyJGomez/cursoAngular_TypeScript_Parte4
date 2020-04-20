@@ -15,26 +15,10 @@ export class HomeComponent implements OnInit {
   constructor(public UsuarioInyectado:UsuarioService, public ArticuloInyectado:ArticulosService, public ruta:Router) { }
 
   ngOnInit(): void {
-
-    this.articulo.push(
-    {
-      nombre: "Curso NET Core",
-      descripcion: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      fecha: new Date(),
-      usuario: `${this.UsuarioInyectado.usuario.nombre} ${this.UsuarioInyectado.usuario.apellido}`
-    },
-    {
-      nombre: "Curso Angular",
-      descripcion: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      fecha: new Date('12/25/2020'),
-      usuario: `${this.UsuarioInyectado.usuario.nombre} ${this.UsuarioInyectado.usuario.apellido}`
-    },
-    {
-      nombre: "Curso Vue js",
-      descripcion: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      fecha: new Date('10/21/2020'),
-      usuario: `${this.UsuarioInyectado.usuario.nombre} ${this.UsuarioInyectado.usuario.apellido}`
-    })
+    this.ArticuloInyectado.leerNoticias().subscribe((articulosDesdeApi)=>{
+      this.articulo = articulosDesdeApi      
+    });
+   
   }
 
   irAlDetalle(listaArticulos:Articulo){

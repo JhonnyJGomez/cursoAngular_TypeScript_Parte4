@@ -1,0 +1,20 @@
+ <div class="container">
+    <form [formGroup]="formularioArticulo">
+        <div  class="form-group">
+            <label for="">Titulo</label>
+            <input type="text" class="form-control" formControlName="title">
+        </div>
+        <div  class="form-group">
+            <label for="">Cuerpo</label>
+            <input type="text" class="form-control" formControlName="body">
+        </div>
+        <div  class="form-group">
+            <label for="">Seleccion un usuario</label>
+            <select class="form-control" formControlName="userId">
+              <option *ngFor="let listaUsuario of usuarios" [value]="listaUsuario.id" >{{listaUsuario.name}}</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" [disabled]="!formularioArticulo.valid" (click)="agregar()">Agregar</button>
+    </form>
+</div> 
+

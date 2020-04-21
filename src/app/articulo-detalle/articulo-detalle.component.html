@@ -1,9 +1,14 @@
 <div class="container">
     <div class="articulo" >
-        <h4>{{articulo.title}}</h4>
-        <p>{{articulo.body}}</p>
-        <p>{{articulo.id}}</p>
-        <p>{{articulo.userId}}</p> 
+        <h4>Articulo</h4>
+        <h5>Titulo: {{articulo.title}}</h5>
+        <h5>Descripción: {{articulo.body}}</h5>
     </div>
-    
+    <div class="autor">
+        <h4>Autor</h4>
+        <h5>Nombre: {{user.name}}</h5>
+        <h5>Correo: {{user.email}}</h5>
+        <h5>Calle: {{user.address.street}}</h5>
+            <h5>Ciudad: {{user.address.city}}</h5> 
+    </div>
 </div>

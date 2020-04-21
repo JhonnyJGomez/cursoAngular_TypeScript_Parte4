@@ -16,8 +16,5 @@ export class UsuarioService {
     this.usuario.apellido = 'Gomez'
   }
 
-  leerNoticias() : Observable<Articulo[]>
-   {
-    return this.http.get<Articulo[]>('https://jsonplaceholder.typicode.com/posts')
-  }
+
 }

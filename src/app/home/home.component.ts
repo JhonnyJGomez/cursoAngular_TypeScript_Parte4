@@ -24,8 +24,7 @@ export class HomeComponent implements OnInit {
   irAlDetalle(listaArticulos:Articulo){
     this.ArticuloInyectado.articulo = listaArticulos
     this.ruta.navigateByUrl('/articulo-detalle')
-    
-    
   }
 
+  
 }

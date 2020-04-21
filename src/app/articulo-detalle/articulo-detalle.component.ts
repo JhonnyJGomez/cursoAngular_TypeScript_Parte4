@@ -23,6 +23,7 @@ export class ArticuloDetalleComponent implements OnInit {
       console.log(this.user)
     })
 
+
   }
 
 }

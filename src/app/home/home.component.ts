@@ -39,6 +39,16 @@ export class HomeComponent implements OnInit {
       console.log(articuloEliminado)
       console.log("Se ha eliminado el articulo numero " + id + " correctamente ")
     })
+  }
+
+  actualizar(articulo:Articulo){
+    articulo.title = "Este es un titulo actualizado"
+    articulo.body = "Este es un cuerpo actualizado"
+
+    this.ArticuloInyectado.actualizarArticulo(articulo).subscribe((articuloActualizado)=>{
+      console.log(articuloActualizado)
+      console.log(`El articulo mumero ${articuloActualizado.id} se ha actualizado con exito` )
+    })
 
   }
   

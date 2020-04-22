@@ -31,4 +31,9 @@ export class ArticulosService {
   {
     return this.http.post<Articulo>(this.ruta+'/posts',this.articulo)
   }
+
+  eliminarArticulo(id:number) : Observable<any>
+  {
+    return this.http.delete<any>(this.ruta+'/posts/'+ id)
+  }
 }

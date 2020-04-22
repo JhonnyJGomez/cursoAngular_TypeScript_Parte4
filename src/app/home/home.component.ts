@@ -34,6 +34,12 @@ export class HomeComponent implements OnInit {
     this.ArticuloInyectado.articulo = listaArticulos
     this.ruta.navigateByUrl('/articulo-detalle')
   }
+  borrar(id:number){
+    this.ArticuloInyectado.eliminarArticulo(id).subscribe((articuloEliminado)=>{
+      console.log(articuloEliminado)
+      console.log("Se ha eliminado el articulo numero " + id + " correctamente ")
+    })
 
+  }
   
 }

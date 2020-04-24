@@ -5,7 +5,7 @@
     - Generar Servicios 
     - Inyectar Servicios
     - Ejercicio Parte 1 Articulos
-    - Ejericio Parte 2 Articulos
+    - Ejercicio Parte 2 Articulos
     - HTTP GET
     - Usuarios
     - HTTP POST

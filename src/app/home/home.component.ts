@@ -42,14 +42,7 @@ export class HomeComponent implements OnInit {
   }
 
   actualizar(articulo:Articulo){
-    articulo.title = "Este es un titulo actualizado"
-    articulo.body = "Este es un cuerpo actualizado"
-
-    this.ArticuloInyectado.actualizarArticulo(articulo).subscribe((articuloActualizado)=>{
-      console.log(articuloActualizado)
-      console.log(`El articulo mumero ${articuloActualizado.id} se ha actualizado con exito` )
-    })
-
+    this.ArticuloInyectado.articulo = articulo;
+    this.ruta.navigateByUrl('/agregar-articulo/false')
   }
-  
 }

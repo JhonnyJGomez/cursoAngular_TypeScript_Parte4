@@ -1,17 +1,17 @@
-Curso Angular 4ta Parte
-En esta 4ta parte encontramos:
+# Curso Angular 4ta Parte
+## En esta 4ta parte encontramos:
 
 * Angular Servicios
-    > Generar Servicios 
-    > Inyectar Servicios
-    > Ejercicio Parte 1 Articulos
-    > Ejericio Parte 2 Articulos
-    > HTTP GET
-    > Usuarios
-    > HTTP POST
-    > Formulario Agregar
-    > HTTP DELETE
-    > HTTP PUT 
+    - Generar Servicios 
+    - Inyectar Servicios
+    - Ejercicio Parte 1 Articulos
+    - Ejericio Parte 2 Articulos
+    - HTTP GET
+    - Usuarios
+    - HTTP POST
+    - Formulario Agregar
+    - HTTP DELETE
+    - HTTP PUT 
 
 # LosServicios
 
